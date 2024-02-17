@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask Web Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Fact Web Page</h1>
+        <div class="form" >
+            <form action="/result" method="post">
+                <div class="search">
+                    <input type="text" id="searchInput" name="fact" placeholder="Enter your search query">
+                </div>
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </div> 
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="/static/index.js"></script>
+</body>
+</html>

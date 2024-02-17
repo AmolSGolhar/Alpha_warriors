@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fact Check Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Fact Check Result:</h2>
+        <ul>
+            {% for key, value in result.items()%}
+            {% if key != 'News Suggestions' %}
+            <li><strong>{{ key }}:</strong>
+                 {{ value }} {% endif %}</li>
+            {% endfor %}
+        </ul>
+        <h3>News Suggestions:</h3>
+        <div class="news-suggestions">
+            {% for suggestion in result['News Suggestions'] %}
+            <div class="info-card">
+                <a href="{{ suggestion }}" target="_blank">
+                    <p>{{ suggestion }}</p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="/">Go back to input page</a>
+    </div>
+</body>
+</html>
