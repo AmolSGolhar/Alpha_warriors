@@ -22,6 +22,8 @@ Python 3.x
 NumPy
 Pandas
 Scikit-learn
+Random forest
+Adaboost 
 Natural Language Toolkit (NLTK)
 
 Usage
